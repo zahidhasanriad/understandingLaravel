@@ -16,11 +16,8 @@ Route::get('/', function()
 	return View::make('hello');
 });
 
-Route::resource('welcome','WelcomeController');
+Route::resource('welcome/sayhello','WelcomeController@testHello');
 
-Route::controller('zahid1','ZahidController'); 
-
-Route::resource('unittest','UserController');
 
 
 
