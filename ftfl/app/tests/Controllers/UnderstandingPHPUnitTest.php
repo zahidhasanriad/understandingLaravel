@@ -1,5 +1,24 @@
 <?php
 
+class DateFormatter
+{
+
+    protected $stamp;
+
+    public function __construct(DateTime $stamp)
+    {
+        $this->stamp = $stamp;
+    }
+
+    public function getStamp()
+    {
+        return $this->stamp;
+    }
+}
+
+
+
+
 class UnderstandingPHPUnitTest extends TestCase{
 
 
@@ -84,6 +103,16 @@ class UnderstandingPHPUnitTest extends TestCase{
         $this->assertInternalType('integer', $age); // assertInternalType is used to verify type of the supplied variable.
 
     }
+
+
+    public function testAssertInstanceOf()
+    {
+        $date = new DateFormatter(new DateTime);
+
+        $this->assertInstanceOf('DateTime', $date->getStamp()); // a variable is instance of some class
+    }
+
+
 
 }
 
