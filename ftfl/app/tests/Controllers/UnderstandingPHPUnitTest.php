@@ -25,6 +25,14 @@ class UnderstandingPHPUnitTest extends TestCase{
     }
 
 
+    public function testAssertNotEquals()
+    {
+        $greeting = 'Hello';
+        $this->assertNotEquals('Hi',$greeting,$greeting);
+    }
+
+
+
 }
 
 
