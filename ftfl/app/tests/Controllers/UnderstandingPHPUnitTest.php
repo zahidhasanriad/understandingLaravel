@@ -66,6 +66,13 @@ class UnderstandingPHPUnitTest extends TestCase{
         $this->assertArrayHasKey('parents', $family); //array has a key same as  needle
     }
 
+    public function testInternalType()
+    {
+        $age = 25;
+        $this->assertInternalType('integer', $age); // assertInternalType is used to verify type of the supplied variable.
+
+    }
+
 }
 
 
