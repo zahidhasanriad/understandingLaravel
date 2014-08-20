@@ -56,6 +56,15 @@ class UnderstandingPHPUnitTest extends TestCase{
         $this->assertNotContains('Troll', $names); //assertFunction(NEEDLE, HAYSTACK, OPTIONAL MESSAGE)
     }
 
+    public function testAssertArrayHasKey()
+    {
+        $family = [
+            'parents' => 'Joe',
+            'children' => ['Timmy', 'Suzy']
+             ];
+
+        $this->assertArrayHasKey('parents', $family); //array has a key same as  needle
+    }
 
 }
 
