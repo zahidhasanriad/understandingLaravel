@@ -18,7 +18,11 @@ class UnderstandingPHPUnitTest extends TestCase{
     }
 
 
-
+    public function testAssertEquals()
+    {
+        $greeting = 'Hello';
+        $this->assertEquals('Hello',$greeting,$greeting); //assertFunction(Expected Message, Actual Message, Optional Message)
+    }
 
 
 }
