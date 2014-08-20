@@ -1,5 +1,5 @@
 <?php
-// application/controllers/users.php
+// application/Controllers/users.php
 
 class Users_Controller extends Base_Controller
 {

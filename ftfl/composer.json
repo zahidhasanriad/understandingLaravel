@@ -9,7 +9,7 @@
 	"autoload": {
 		"classmap": [
 			"app/commands",
-			"app/controllers",
+			"app/Controllers",
 			"app/models",
 			"app/database/migrations",
 			"app/database/seeds",

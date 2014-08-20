@@ -1,5 +1,5 @@
 <?php
-// application/tests/controllers/users.test.php
+// application/tests/Controllers/users.test.php
 
 class TestUsersController extends PHPUnit_Framework_TestCase {
 
