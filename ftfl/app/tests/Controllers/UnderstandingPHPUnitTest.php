@@ -66,6 +66,18 @@ class UnderstandingPHPUnitTest extends TestCase{
         $this->assertArrayHasKey('parents', $family); //array has a key same as  needle
     }
 
+
+    public function testAssertArrayNotHasKey()
+    {
+        $family = [
+            'parents' => 'Joe',
+            'children' => ['Timmy', 'Suzy']
+        ];
+
+        $this->assertArrayNotHasKey('relative', $family); //array has a key same as  needle
+    }
+
+
     public function testInternalType()
     {
         $age = 25;
