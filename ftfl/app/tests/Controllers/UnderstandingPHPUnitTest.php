@@ -32,6 +32,11 @@ class UnderstandingPHPUnitTest extends TestCase{
     }
 
 
+    public function testAssertSame()
+    {
+        $greeting =null;
+        $this->assertSame(null,$greeting,$greeting); //assertSame is checking with strict equality
+    }
 
 }
 
