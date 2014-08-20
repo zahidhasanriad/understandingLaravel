@@ -50,6 +50,11 @@ class UnderstandingPHPUnitTest extends TestCase{
         $this->assertContains('Dayle', $names); //assertFunction(NEEDLE, HAYSTACK, OPTIONAL MESSAGE)
     }
 
+    public function testAssertNotContains()
+    {
+        $names = ['Taylor', 'Shawn', 'Dayle'];
+        $this->assertNotContains('Troll', $names); //assertFunction(NEEDLE, HAYSTACK, OPTIONAL MESSAGE)
+    }
 
 
 }
